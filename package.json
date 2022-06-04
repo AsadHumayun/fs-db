@@ -1,0 +1,29 @@
+{
+  "name": "fs-db0",
+  "version": "1.2.3",
+  "description": "Allows for use of the fs package as a database wrapper. Comes with get(), set(), and remove() functions (more coming soon)",
+  "main": "index.js",
+  "type": "commonjs",
+  "types": "./typings/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asadhumayun/fs-db.git"
+  },
+  "keywords": [
+    "filesystem-database",
+    "filesystem",
+    "database",
+    "fs-db",
+    "fs",
+    "db"
+  ],
+  "author": "@asadhumayun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asadhumayun/fs-db/issues"
+  },
+  "homepage": "https://github.com/asadhumayun/fs-db#readme"
+}
