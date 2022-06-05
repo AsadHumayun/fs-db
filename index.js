@@ -12,10 +12,10 @@ class Database {
    * @constructor
    * @example new Database("./data/");
    */
-	constructor(path) {
-		if (!fs.existsSync(path)) {
-			throw new Error(`[fs-db0 => NONEXISTANT_PATH_ERROR]: Path '${path}' does not exist`)
-		}
+  constructor(path) {
+    if (!fs.existsSync(path)) {
+      throw new Error(`[fs-db0 => NONEXISTANT_PATH_ERROR]: Path '${path}' does not exist`)
+    }
     else {
       if (!path.endsWith('/')) {
         this.path = path + '/'; 
@@ -24,7 +24,7 @@ class Database {
         this.path = path;
       };
     };
-	};
+  };
   /**
    * Determines the path of the database entry.
    * @param {string} p path of file
