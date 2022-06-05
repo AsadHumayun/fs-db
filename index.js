@@ -66,7 +66,7 @@ class Database {
    * @param {?string} [opts.flag] Flag which is to be used when reading the contents of the file. This value defaults to `"r"`
    * @returns {?any} value
    */
-   get(key, opts = { precisePath: "", dataType: "string", encoding: "utf8", flag: "r" }) {
+  get(key, opts = { precisePath: "", dataType: "string", encoding: "utf8", flag: "r" }) {
     if (key.startsWith('/')) key = key.replace('/', '');
     opts = this.#fornatOptions(opts, "g");
     let path = this.#getFilePath(opts.precisePath + "/" + key);
@@ -127,7 +127,7 @@ class Database {
    * @param {?string} encoding Encoding type to decode the Buffer (sent directly into `Buffer.toString`)
    * @returns {Array<K<string>, V<string>} entries
    */
-   entries(dir, encoding = "ascii") {
+  entries(dir, encoding = "ascii") {
     dir = this.#getFilePath(dir ? "/" + dir : dir);
     let data = [];
     Object.values(fs.readdirSync(dir)).forEach((file) => {
