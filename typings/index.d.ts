@@ -1,4 +1,4 @@
-declare module 'fs-db0' {
+declare module 'fs-db' {
 /**
  * Create a new filesystem database class.
  * Comes with get, set, remove and entries functions.
